@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE JAVASCRIPT</title>
+    <!-- BS4  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style3.css">
+</head>
+<body>
+    <!-- EXERCISE 1 -->
+    <div class="container exercise1-section my-5">
+        <div class="card w-50 mx-auto">
+            <div class="card-header bg-primary text-light text-center">
+               SORT ORDER NUMBERS
+            </div>
+            <div class="card-body exercise1-title">
+                <div class="form-group text-center">       
+                    <label>INPUT 3 INTEGER IN PER BLANK</label> <br>
+                    1)<input id="numberFirst" type="number"><br>
+                    2)<input id="numberSecond" type="number"><br>
+                    3)<input id="numberThird" type="number"><br>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button onclick="arrangeNumber()">Submit</button>
+                </div>
+                <div class="exercise1-info">
+                    <p id="demo"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXERCISE 2  -->
+    <div class="container exercise2-section my-5">
+        <div class="card w-50 mx-auto">
+            <div class="card-header bg-warning text-light text-center">
+               GET GREETING
+            </div>
+            <div class="card-body exercise2-title">
+                <div class="form-group text-center">       
+                    <h2>HELLO!!! WHO ARE YOU???</h2>
+                    <span>Please choose your answer below:</span> <br>
+                    <select name="family" id="member">
+                        <option value="father">Father</option>
+                        <option value="mother">Mother</option>
+                        <option value="brother">Brother</option>
+                        <option value="sister">Sister</option>
+                      </select>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button onclick="sayHello()">Submit</button>
+                </div>
+                <div class="exercise2-info">
+                    <p id="demo2"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXERCISE 3  -->
+    <div class="container exercise3-section my-5">
+        <div class="card w-50 mx-auto">
+            <div class="card-header bg-info text-light text-center">
+               EVEN & ODD
+            </div>
+            <div class="card-body exercise3-title">
+                <div class="form-group text-center">       
+                    <label>INPUT 3 INTEGER IN PER BLANK</label> <br>
+                    1)<input id="numberOne" type="number"><br>
+                    2)<input id="numberTwo" type="number"><br>
+                    3)<input id="numberThree" type="number"><br>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button onclick="sortNumber(numberOne, numberTwo, numberThree)">Submit</button>
+                </div>
+                <div class="exercise3-info">
+                    <p id="demo3"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXERCISE 4  -->
+    <div class="container exercise4-section my-5">
+        <div class="card w-50 mx-auto">
+            <div class="card-header bg-danger text-light text-center">
+               TRIANGLE
+            </div>
+            <div class="card-body exercise4-title">
+                <div class="form-group text-center">       
+                    <label>INPUT 3 SIDES OF TRIANGLE</label> <br>
+                    1)<input id="side1a" type="number"><br>
+                    2)<input id="side2b" type="number"><br>
+                    3)<input id="side3c" type="number"><br>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button onclick="checkTriangle()">Result</button>
+                </div>
+                <div class="exercise4-info">
+                    <p id="demo4"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- jQuery and Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <script src="./js/exercise3.js"></script>
+    
+
+</body>
+</html>
